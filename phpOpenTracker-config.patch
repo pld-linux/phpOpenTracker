@@ -1,0 +1,12 @@
+diff -uNr phpOpenTracker-1.4.1/phpOpenTracker-1.4.1/phpOpenTracker/conf/phpOpenTracker.php.dist phpOpenTracker-1.4.1.milley/phpOpenTracker-1.4.1/phpOpenTracker/conf/phpOpenTracker.php.dist
+--- phpOpenTracker-1.4.1/phpOpenTracker-1.4.1/phpOpenTracker/conf/phpOpenTracker.php.dist	Fri Mar 12 15:53:42 2004
++++ phpOpenTracker-1.4.1.milley/phpOpenTracker-1.4.1/phpOpenTracker/conf/phpOpenTracker.php.dist	Mon Mar 15 00:51:48 2004
+@@ -145,7 +145,7 @@
+ // $PHPOPENTRACKER_CONFIGURATION['log_reload'] = false;
+ 
+ // The path to your JPGraph installation.
+-// $PHPOPENTRACKER_CONFIGURATION['jpgraph_path'] = '';
++// $PHPOPENTRACKER_CONFIGURATION['jpgraph_path'] = '/usr/share/php/jpgraph';
+ 
+ // With this directive you can define the names, separated by commas,
+ // of plugins for the phpOpenTracker Logging Engine, that should be
