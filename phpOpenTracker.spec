@@ -8,6 +8,7 @@ Release:	0.1
 License:	Apache Software License, Version 2.0
 Group:		Development/Languages/PHP
 Source0:	http://dl.sourceforge.net/phpopencounter/%{name}-%{version}.tgz
+# Source0-md5:	e3a66b99137f0bb05782ddffa5a23eb8
 Patch0:		%{name}-config.patch
 URL:		http://phpopentracker.de/
 Requires:	jpgraph
@@ -29,7 +30,7 @@ oraz ¶ledzenia u¿ytkowników na stronach WWW
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_sysconfdir}/%{name},%{php_pear_dir}/%{name}/{API,API/plugins,DB,LoggingEngine,conf}} 
+install -d $RPM_BUILD_ROOT{%{_sysconfdir}/%{name},%{php_pear_dir}/%{name}/{API,API/plugins,DB,LoggingEngine,conf}}
 
 install %{name}-%{version}/%{name}.php   $RPM_BUILD_ROOT%{php_pear_dir}/
 install %{name}-%{version}/%{name}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{name}/
