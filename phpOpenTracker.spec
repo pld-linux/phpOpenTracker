@@ -51,13 +51,13 @@ done
 rm -rf $RPM_BUILD_ROOT
 
 %post
-echo "Remember to create database and customize configuration in" >&2
-echo "%{_sysconfdir}/%{name}/phpOpenTracker.php file !" >&2
+echo "Remember to create database and customize configuration in"
+echo "%{_sysconfdir}/%{name}/phpOpenTracker.php file !"
 
 %files
 %defattr(644,root,root,755)
 %doc %{name}-%{version}/%{name}/docs/*
+%dir %{_sysconfdir}/%{name}
 %{php_pear_dir}/%{name}
 %{php_pear_dir}/*.php
-%dir %{_sysconfdir}/%{name}
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/%{name}/*
