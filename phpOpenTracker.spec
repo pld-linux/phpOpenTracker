@@ -32,13 +32,13 @@ oraz ¶ledzenia u¿ytkowników na stronach WWW.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_sysconfdir}/%{name},%{php_pear_dir}/%{name}/{API,API/plugins,DB,LoggingEngine,conf}}
 
-install %{name}-%{version}/%{name}.php   $RPM_BUILD_ROOT%{php_pear_dir}
-install %{name}-%{version}/%{name}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{name}
-install %{name}-%{version}/%{name}/API/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{name}/API
-install %{name}-%{version}/%{name}/API/plugins/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{name}/API/plugins
-install %{name}-%{version}/%{name}/DB/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{name}/DB
-install %{name}-%{version}/%{name}/LoggingEngine/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{name}/LoggingEngine
-install %{name}-%{version}/%{name}/conf/* $RPM_BUILD_ROOT%{_sysconfdir}/%{name}
+install %{name}-%{version}/%{name}.php			$RPM_BUILD_ROOT%{php_pear_dir}
+install %{name}-%{version}/%{name}/*.php		$RPM_BUILD_ROOT%{php_pear_dir}/%{name}
+install %{name}-%{version}/%{name}/API/*.php		$RPM_BUILD_ROOT%{php_pear_dir}/%{name}/API
+install %{name}-%{version}/%{name}/API/plugins/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{name}/API/plugins
+install %{name}-%{version}/%{name}/DB/*.php		$RPM_BUILD_ROOT%{php_pear_dir}/%{name}/DB
+install %{name}-%{version}/%{name}/LoggingEngine/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{name}/LoggingEngine
+install %{name}-%{version}/%{name}/conf/*		$RPM_BUILD_ROOT%{_sysconfdir}/%{name}
 
 mv -f $RPM_BUILD_ROOT%{_sysconfdir}/%{name}/phpOpenTracker.php.dist $RPM_BUILD_ROOT%{_sysconfdir}/%{name}/phpOpenTracker.php
 mv -f $RPM_BUILD_ROOT%{_sysconfdir}/%{name}/lock.ini.dist $RPM_BUILD_ROOT%{_sysconfdir}/%{name}/lock.ini
