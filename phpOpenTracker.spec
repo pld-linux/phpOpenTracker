@@ -3,18 +3,23 @@
 Summary:	phpOpenTracker - website traffic analysis framework
 Summary(pl):	phpOpenTracker - abstrakcyjna warstwa analizatora ruchu na stronach WWW
 Name:		phpOpenTracker
-Version:	1.4.1
+Version:	1.5.0
 Release:	0.1
 License:	Apache Software License, Version 2.0
 Group:		Development/Languages/PHP
-Source0:	http://dl.sourceforge.net/phpopencounter/%{name}-%{version}.tgz
-# Source0-md5:	e3a66b99137f0bb05782ddffa5a23eb8
-Patch0:		%{name}-config.patch
+Source0:	http://download.berlios.de/phpopentracker/%{name}-%{version}.tgz
+# Source0-md5:	0b1b6bfa68db54eebddbd00d051f122d
 URL:		http://phpopentracker.de/
+Requires:	php >= 4.2.1
 Requires:	jpgraph
 Requires:	php-pear
+Requires:	php-pear-Cache_Lite
+Requires:	php-pear-Image_GraphViz
+Requires:	php-pear-XML_Tree
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		php_pear_dir	%{_datadir}/pear
 
 %description
 phpOpenTracker is a framework solution for the analysis of website
@@ -26,7 +31,6 @@ oraz ¶ledzenia u¿ytkowników na stronach WWW.
 
 %prep
 %setup -q -c
-%patch -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -60,4 +64,4 @@ echo "%{_sysconfdir}/%{name}/phpOpenTracker.php file !"
 %dir %{_sysconfdir}/%{name}
 %{php_pear_dir}/%{name}
 %{php_pear_dir}/*.php
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/%{name}/*
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}/*
