@@ -1,4 +1,4 @@
-# ToDo:
+# TODO:
 #  - placement of files - not so sure if they should go to php_pear_dir
 Summary:	phpOpenTracker - website traffic analysis framework
 Summary(pl):	phpOpenTracker - abstrakcyjna warstwa analizatora ruchu na stronach WWW
@@ -10,12 +10,12 @@ Group:		Development/Languages/PHP
 Source0:	http://download.berlios.de/phpopentracker/%{name}-%{version}.tgz
 # Source0-md5:	0b1b6bfa68db54eebddbd00d051f122d
 URL:		http://phpopentracker.de/
-Requires:	php >= 4.2.1
 Requires:	jpgraph
 Requires:	php-pear
 Requires:	php-pear-Cache_Lite
 Requires:	php-pear-Image_GraphViz
 Requires:	php-pear-XML_Tree
+Requires:	webserver(php) >= 4.2.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
