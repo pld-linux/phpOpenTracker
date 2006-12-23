@@ -5,7 +5,7 @@ Summary(pl):	phpOpenTracker - abstrakcyjna warstwa analizatora ruchu na stronach
 Name:		phpOpenTracker
 Version:	1.5.2
 Release:	1
-License:	Apache Software License, Version 2.0
+License:	Apache v2.0
 Group:		Development/Languages/PHP
 Source0:	http://download.berlios.de/phpopentracker/%{name}-%{version}.tgz
 # Source0-md5:	6e28c979f66b4b53e3fa97052376db34
