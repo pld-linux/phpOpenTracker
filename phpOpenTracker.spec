@@ -3,12 +3,12 @@
 Summary:	phpOpenTracker - website traffic analysis framework
 Summary(pl):	phpOpenTracker - abstrakcyjna warstwa analizatora ruchu na stronach WWW
 Name:		phpOpenTracker
-Version:	1.5.0
-Release:	0.1
+Version:	1.5.2
+Release:	1
 License:	Apache Software License, Version 2.0
 Group:		Development/Languages/PHP
 Source0:	http://download.berlios.de/phpopentracker/%{name}-%{version}.tgz
-# Source0-md5:	0b1b6bfa68db54eebddbd00d051f122d
+# Source0-md5:	6e28c979f66b4b53e3fa97052376db34
 URL:		http://phpopentracker.de/
 Requires:	jpgraph
 Requires:	php-pear
@@ -23,11 +23,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 phpOpenTracker is a framework solution for the analysis of website
-traffic and visitor analysis.
+traffic and visitor analysis. Requires one if MySQL, PostgreSQL or
+Oracle database.
 
 %description -l pl
 phpOpenTracker jest abstrakcyjn± warstw± s³u¿±c± do analizowania ruchu
-oraz ¶ledzenia u¿ytkowników na stronach WWW.
+oraz ¶ledzenia u¿ytkowników na stronach WWW. Do dzia³ania wymaga
+jednej z baz danych: MySQL, PostgreSQL lub Oracle.
 
 %prep
 %setup -q -c
