@@ -1,7 +1,7 @@
 # TODO:
 #  - placement of files - not so sure if they should go to php_pear_dir
 Summary:	phpOpenTracker - website traffic analysis framework
-Summary(pl):	phpOpenTracker - abstrakcyjna warstwa analizatora ruchu na stronach WWW
+Summary(pl.UTF-8):   phpOpenTracker - abstrakcyjna warstwa analizatora ruchu na stronach WWW
 Name:		phpOpenTracker
 Version:	1.5.2
 Release:	1
@@ -26,9 +26,9 @@ phpOpenTracker is a framework solution for the analysis of website
 traffic and visitor analysis. Requires one if MySQL, PostgreSQL or
 Oracle database.
 
-%description -l pl
-phpOpenTracker jest abstrakcyjn± warstw± s³u¿±c± do analizowania ruchu
-oraz ¶ledzenia u¿ytkowników na stronach WWW. Do dzia³ania wymaga
+%description -l pl.UTF-8
+phpOpenTracker jest abstrakcyjnÄ… warstwÄ… sÅ‚uÅ¼Ä…cÄ… do analizowania ruchu
+oraz Å›ledzenia uÅ¼ytkownikÃ³w na stronach WWW. Do dziaÅ‚ania wymaga
 jednej z baz danych: MySQL, PostgreSQL lub Oracle.
 
 %prep
