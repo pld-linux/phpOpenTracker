@@ -1,7 +1,7 @@
 # TODO:
 #  - placement of files - not so sure if they should go to php_pear_dir
 Summary:	phpOpenTracker - website traffic analysis framework
-Summary(pl.UTF-8):   phpOpenTracker - abstrakcyjna warstwa analizatora ruchu na stronach WWW
+Summary(pl.UTF-8):	phpOpenTracker - abstrakcyjna warstwa analizatora ruchu na stronach WWW
 Name:		phpOpenTracker
 Version:	1.5.2
 Release:	1
